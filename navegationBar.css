@@ -1,0 +1,97 @@
+*{
+    height: 100%;
+    margin:0px;
+    padding: 0px;
+}
+
+#cabecalho{
+    height: 50px;
+    background: black;
+    line-height: 50px;
+    margin-top:0px;
+    z-index: 3;
+}
+
+#logo{
+    font-family: 'Poiret One', cursive;
+    color: white;
+    float:left;
+    margin-left:20px;
+}
+
+
+
+#navegar{
+    font-family: 'Poiret One', cursive;
+    font-size: 20px;
+    float:right;
+    color:white;
+    margin-right: 20px;
+    margin-left:10px; 
+    
+}
+
+#navegar a{
+    margin-right: 15px;
+}
+
+#menu{
+    display: none;
+    color:white;
+    font-size: 26px;
+    margin-right: 15px;
+}
+#toggle{
+    display: none;
+}
+a.tipo1:visited{
+    color:white;
+    text-decoration: none;
+}
+
+a.tipo1:link{
+    color:white;
+    background: black;
+}
+
+a.tipo1:hover{
+    text-decoration: none;
+    color:grey;
+    transition: 0.3s;
+    
+}
+
+@media only screen and (max-width: 700px){
+    #menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    #navegar{
+        text-align: center;
+        width:100%;
+        display: none;
+        z-index:4;
+        
+    }
+
+    #navegar a{
+        display: block;
+        width:100%;
+        height: 100%;
+        margin-left: 15px;
+        background: black;
+        border-bottom: 1px solid grey;
+        z-index:4;
+    }
+
+    #toggle:checked + #navegar{
+        display:block;
+        margin-bottom:10px;
+    }
+
+    #toggle:checked + .fotoCorpo{
+        margin-top:170px;
+    
+    }
+}

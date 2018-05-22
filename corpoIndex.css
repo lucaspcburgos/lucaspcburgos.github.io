@@ -1,0 +1,61 @@
+.fotoCorpo{
+    width:100%;
+    height:50vh;
+    background-image:url(fotos/computador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    padding: 0px;
+    z-index: 1;
+    padding:0px;
+    line-height: 50vh;
+    text-align: left;;
+}
+
+@keyframes expor{
+    from {background-color:rgba(0, 0, 0, 4) }
+    to {background-color:rgba(0, 0, 0, 0.7)}
+}
+
+@keyframes piscar{
+    from{opacity:0}
+    to{opacity:1}
+}
+.textoFoto{
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Press Start 2P', cursive;
+    border:0px solid red;
+    width: 100%;
+    height:100%;
+    font-size: 3vh;
+    font-weight: bold;
+    color:white;
+    margin:0px;
+    text-align: center;
+}
+
+.cursor{
+    opacity: 0;
+    animation-name: piscar;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    
+}
+
+.aboutMe{
+    width: 50vh;;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid orange;
+    text-align: center;
+    margin-top: 10vh;
+    color: black;
+    height:90vh;
+    
+}
+
+
+
